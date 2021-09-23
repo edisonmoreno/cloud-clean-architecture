@@ -31,13 +31,14 @@ sourceCompatibility = 1.8
 subprojects {
     repositories {
         maven {
-            url "s3://techandsolve.com/releases"
+            url "s3://edisonmoreno-aws-releases/"
             credentials(AwsCredentials) {
                 accessKey awsCredentials.AWSAccessKeyId
                 secretKey awsCredentials.AWSSecretKey
             }
         }
         mavenLocal()
+
         mavenCentral()
     }
 }
