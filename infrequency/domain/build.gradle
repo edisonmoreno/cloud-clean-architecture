@@ -25,7 +25,7 @@ publishing {
 
     repositories {
         maven {
-            url "s3://edisonmoreno-aws-releases/"
+            url "s3://edisonmoreno-bucket-artifact/release/"
             credentials(AwsCredentials) {
                 accessKey awsCredentials.AWSAccessKeyId
                 secretKey awsCredentials.AWSSecretKey
